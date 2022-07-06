@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>   
+    <form action="#" method="post" name="create-account"><hr>
+        <h2>Create an Account</h2>
+        <label>First Name<br>
+            <input type="text" name="firstname" required><br>
+        </label>
+        <label>Last Name<br>
+            <input type="text" name="lastname"><br>
+        </label>
+        <label>E-mail<br>
+            <input type="email" name="email" required>
+        </label>
+        <p>We'll never share your email with anyone else.</p>
+        <label>
+            <input type="radio" name="sex">
+            Male
+        </label>
+        <label>
+            <input type="radio" name="sex">
+            Female
+        </label><br>
+        <select name="countries" id="countries1">
+            <option value="ukraine">Ukraine</option>
+            <option value="georgia">Georgia</option>
+            <option value="kazakhstan">Kazakhstan</option>
+        </select><br>
+        <label>City<br>
+            <input type="text" name="city">
+        </label><br>
+        <button type="submit" style="background-color: blue;">Sign Up</button>
+        <p>By clicking the 'Sign Up' button, you confirm that you accept our 
+            <a href="#">Terms of Use </a> 
+            and 
+            <a href="#">Privacy Policy.</a>
+        </p><br>
+        <p>Have an account?</p>
+        <a href="#">Log In</a> 
+    </form><hr>
+    <form action="#" method="post" name="profile">
+        <h2>Profile</h2>
+        <img src="/img/photo.jpg" alt="photo">
+        <label>
+            <input type="file" name="photo-file">
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.78001 1.33333L5.00001 0H9.00001L10.22
+                1.33333H12.3333C13.0667 1.33333 13.6667 1.93333 13.6667 2.66667V10.6667C13.6667 11.4 13.0667
+                12 12.3333 12H1.66668C0.933344 12 0.333344 11.4 0.333344 10.6667V2.66667C0.333344 1.93333 
+                0.933344 1.33333 1.66668 1.33333H3.78001ZM3.66668 6.66667C3.66668 8.50667 5.16001 10 7.00001
+                10C8.84001 10 10.3333 8.50667 10.3333 6.66667C10.3333 4.82667 8.84001 3.33333 7.00001 
+                3.33333C5.16001 3.33333 3.66668 4.82667 3.66668 6.66667ZM7.00001 8.8C8.17822 8.8 9.13334 
+                7.84487 9.13334 6.66667C9.13334 5.48846 8.17822 4.53333 7.00001 4.53333C5.8218 4.53333
+                4.86668 5.48846 4.86668 6.66667C4.86668 7.84487 5.8218 8.8 7.00001 8.8Z" fill="#969696"/>
+            </svg>
+            <p>Up to 1 MB (300x300 px)</p>
+        </label>
+        <label>
+            <input type="reset" value="Reset" style="color: black;">
+        </label>
+        <label>Name<br>
+            <input type="text" name="name" required><br>
+        </label>
+        <label>E-mail<br>
+            <input type="email" name="email" required>
+        </label><br>
+        <select name="countries" id="countries2">
+            <option value="poland">Poland</option>
+            <option value="ukraine">Ukraine</option>
+            <option value="great-britain">Great Britain</option>
+        </select><br>
+        <label>City<br>
+            <input type="text" name="city">
+        </label><br>
+        <label>Zip Code<br>
+            <input type="renge" min="3" max="10" name="zip-code" required>
+        </label><br>
+        <label>Phone Number<br>
+            <input type="tel" name="phone-number">
+        </label><br>
+        <button type="submit" style="background-color: blue;">Update</button>
+    </form>
+</body>
+</html>
