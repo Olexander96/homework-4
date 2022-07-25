@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
-<body>   
-    <form action="#" method="post" name="create-account"><hr>
-        <h2>Create an Account</h2>
+<body>
+    <!--first form-->
+    <h2>Create an Account</h2><hr>   
+    <form action="#" method="post" name="create-account">
         <label>First Name<br>
             <input type="text" name="firstname" required><br>
         </label>
@@ -28,6 +29,7 @@
             Female
         </label><br>
         <select name="countries" id="countries1">
+            <option value="empty"></option>
             <option value="ukraine">Ukraine</option>
             <option value="georgia">Georgia</option>
             <option value="kazakhstan">Kazakhstan</option>
@@ -36,16 +38,17 @@
             <input type="text" name="city">
         </label><br>
         <button type="submit" style="background-color: blue;">Sign Up</button>
-        <p>By clicking the 'Sign Up' button, you confirm that you accept our 
-            <a href="#">Terms of Use </a> 
-            and 
-            <a href="#">Privacy Policy.</a>
-        </p><br>
-        <p>Have an account?</p>
-        <a href="#">Log In</a> 
-    </form><hr>
+    </form>
+    <p>By clicking the 'Sign Up' button, you confirm that you accept our 
+        <a href="#">Terms of Use </a> 
+        and 
+        <a href="#">Privacy Policy.</a>
+    </p><br>
+    <p>Have an account?</p>
+    <a href="#">Log In</a><hr>
+    <!--second form-->
+    <h2>Profile</h2>
     <form action="#" method="post" name="profile">
-        <h2>Profile</h2>
         <img src="img/photo.jpg" alt="photo">
         <label>
             <input type="file" name="photo-file">
@@ -71,6 +74,7 @@
             <input type="email" name="email" required>
         </label><br>
         <select name="countries" id="countries2">
+            <option value="empty"></option>
             <option value="poland">Poland</option>
             <option value="ukraine">Ukraine</option>
             <option value="great-britain">Great Britain</option>
